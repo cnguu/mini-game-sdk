@@ -17,7 +17,7 @@ $ pnpm i
 ## Build SDK
 
 ```shell
-pnpm build\
+yarn build\
 --platform wechat\
 --domain https://api.test.com\
 --app_id 12345\
