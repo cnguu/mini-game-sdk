@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "experimentalDecorators": true,
+    "lib": ["dom", "esnext"],
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noEmitHelpers": true,
+    "sourceMap": false,
+    "declaration": false,
+    "typeRoots": ["./node_modules/@types/", "./types"],
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "types/**/*.d.ts"],
+  "exclude": ["node_modules", "dist", "**/*.js"]
+}

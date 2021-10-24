@@ -1,0 +1,51 @@
+{
+  "name": "mini-game-sdk",
+  "version": "1.0.0",
+  "description": "Multi-platform mini-game SDK development template.",
+  "keywords": [
+    "sdk",
+    "mini-game",
+    "mini-game-sdk"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cnguu/mini-game-sdk.git"
+  },
+  "author": "cnguu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cnguu/mini-game-sdk/issues"
+  },
+  "homepage": "https://github.com/cnguu/mini-game-sdk#readme",
+  "engines": {
+    "node": ">= 14"
+  },
+  "main": "./src/main.ts",
+  "scripts": {
+    "build": "gulp",
+    "lint": "eslint --ext .ts src/**.ts",
+    "format": "prettier --write --parser typescript \"src/**/*.ts\"",
+    "preinstall": "node ./scripts/preinstall.js",
+    "postinstall": "husky install"
+  },
+  "devDependencies": {
+    "@rollup/plugin-alias": "^3.1.8",
+    "@rollup/plugin-node-resolve": "^13.0.6",
+    "@rollup/plugin-replace": "^3.0.0",
+    "@rollup/plugin-typescript": "^8.3.0",
+    "@types/node": "^14.17.29",
+    "@typescript-eslint/eslint-plugin": "^5.1.0",
+    "@typescript-eslint/parser": "^5.1.0",
+    "eslint": "^8.1.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-uglify": "^3.0.2",
+    "husky": "^7.0.4",
+    "minimist": "^1.2.5",
+    "prettier": "^2.4.1",
+    "rollup": "^2.58.0",
+    "typescript": "^4.4.4"
+  }
+}
